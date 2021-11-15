@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* すべてのWebページに適用される ================================================================================================ */
+
+* {
+	
+    /* フォントファミリー */
+	font-family: "メイリオ", Meiryo, "游ゴシック","Yu Gothic",YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	
+    /* 余白は全て０ */
+	margin: 0px; padding: 0px;
+    
+	 /* ボックスモデルはborder-box  */
+	-webkit-box-sizing: border-box; -moz-box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box;
+}
+
+/* スクロール */
+html,body{ scroll-behavior: smooth; } 
+
+/* --------------------------------------------------------------------------
+    クリア　フロートを使った時に解除するためのもの
+---------------------------------------------------------------------------- */
+hr { border: none; clear: both; visibility: hidden; height: 0px; }
+.cf:before,.cf:after { content: " "; display: table; }
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+
+/* --------------------------------------------------------------------------
+    ボディ
+---------------------------------------------------------------------------- */
+body { 
+	font-size: 18px;  /* 基本の文字サイズ */
+	color: #554738;  /* 文字色 */
+    background-color: #fafafa; /* 背景色 */
+}
+
+.map{
+    max-width: 960px; /* 最大横幅 */
+    margin: 0 auto; /* 左右中央 */
+    background-color: #fff; /* 背景色 */
+}
+
+/* --------------------------------------------------------------------------
+    SVGマップ　SVG用のCSSなので通常は使わないです
+---------------------------------------------------------------------------- */
+      .cls-1 {
+        fill: #efefef;/* 塗りつぶしの色 */
+      }
+
+      .cls-1, .cls-4, .cls-6, .cls-7, .cls-8 {
+        stroke: #fff;/* 塗りつぶしの色 */
+        stroke-linecap: round;/* 線(パス)の終端の形状 */
+        stroke-linejoin: round;/* 線(パス)の曲がりまたは基本的な輪郭の形状 */
+      }
+
+      .cls-5 {
+        font-size: 10px;/* 文字サイズ */
+      }
+
+      .cls-2, .cls-3 {
+        fill: #b5b5b6;/* 塗りつぶしの色 */
+        font-size: 9px;/* 文字サイズ */
+      }
+
+      .cls-3 {
+        writing-mode: tb;/* 書字方向（横書きや縦書き）を指定：横書き */
+        text-orientation: upright;/* 縦書きの際に各文字を90度回転させる・させないを指定:全ての文字を上向きに */
+        glyph-orientation-vertical: 0deg;/* 縦書きテキストに限り適用:文字の方位0 */
+      }
+
+      .cls-4 {
+        fill: #f4f6cf;/* 塗りつぶしの色 */
+      }
+
+      .cls-4, .cls-6, .cls-7, .cls-8 {
+        stroke-width: 2px;
+      }
+
+      .cls-5 {
+        fill: #231815;/* 塗りつぶしの色 */
+      }
+
+      .cls-6 {
+        fill: #cccbe3;/* 塗りつぶしの色 */
+      }
+
+      .cls-7 {
+        fill: #cee6d8;/* 塗りつぶしの色 */
+      }
+
+      .cls-8 {
+        fill: #cde0f2;/* 塗りつぶしの色 */
+      }
+
+/* --------------------------------------------------------------------------
+    追記 ホバー時　SVGマップ
+---------------------------------------------------------------------------- */
+/*　神戸市　*/
+#_23-kobe-si polygon:hover {
+  fill: #fdd35c;/* 塗りつぶしの色 */
+}
+
+/*　明石市,稲美町,加古川市,播磨町,高砂市　*/
+#_22-akasi-si polygon:hover,
+#_21-inami-cho polygon:hover,
+#_20-kako-gawa-si polygon:hover,
+#_19-harima-cho polygon:hover,
+#_18-taka-sago-si polygon:hover{
+  fill: #a688bd; /* 塗りつぶしの色 */   
+}
+
+/*　三木市,西脇市,加東市,小野市,加西市,多可町　*/
+#_17-miki-si polygon:hover,
+#_16-nisi-waki-si polygon:hover,
+#_15-katou-si polygon:hover,
+#_14-ono-si polygon:hover,
+#_13-kasai-si polygon:hover,
+#_12-taka-cho polygon:hover{
+  fill: #67b5b7; /* 塗りつぶしの色 */
+}
+
+/*　福崎町,市川町,神河町,姫路市,太子町,たつの市,
+    相生市,赤穂市,佐用町,宍粟市　*/
+#_11-fukusaki-cho polygon:hover,
+#_10-ichikawa-cho polygon:hover,
+#_09-kami-kawa-cho polygon:hover,
+#_08-himeji-si polygon:hover,
+#_07-taisi-cho polygon:hover,
+#_06-tatuno-si polygon:hover,
+#_05-aioi-si polygon:hover,
+#_04-akou-si polygon:hover,
+#_03-kami-gori-cho polygon:hover,
+#_02-satou-cho polygon:hover,
+#_01-sisou-si polygon:hover{
+  fill: #94adda; /* 塗りつぶしの色 */
+}
+
+/* 文字部分 */
+a:hover .cls-5 {
+  fill: #16160e; /* 塗りつぶしの色 */
+    font-weight: bold; /* 太字 */
+}
