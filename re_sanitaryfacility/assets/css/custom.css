@@ -18,13 +18,19 @@
   margin-right: 20px;
 }
 
-.c-small {
+.c-small,.c-column {
   text-align: center;
   border: dotted 0.35px #fff;
   border-radius: 10px;
   padding: 10px;
   width: 80%;
   margin: 0 auto;
+}
+
+small{
+  text-decoration: underline;
+  display: inline-block;
+  padding-bottom: 30px;
 }
 
 h3 {
@@ -35,6 +41,26 @@ p {
   margin: 20px;
 }
 
+.tobecon{
+  margin:50px
+}
+
+.subimage img{
+  max-width:200px;
+}
+
+.rightimag{
+  margin-left: auto;
+}
+
+
+.c-column{
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+
+/*レスポンシブ指定↓*/
 @media screen and (max-width: 480px) {
   #header h1 {
     font-size: 0.8rem;
@@ -73,14 +99,9 @@ p {
     margin: 0 auto;
   }
   
+  article>p{
+    display: block;
+  }
 
 }
 
-
-.subimage img{
-  max-width:200px;
-}
-
-.rightimag{
-  margin-left: auto;
-}
