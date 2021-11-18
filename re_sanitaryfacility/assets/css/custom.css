@@ -10,6 +10,7 @@
 }
 .c-p2 {
   margin: 30px, 60px;
+  display: flex;
 }
 
 .c-section {
@@ -62,4 +63,13 @@ p {
     width: 100%;
     margin: 0 auto;
   }
+}
+
+
+.subimage img{
+  max-width:200px;
+}
+
+.rightimag{
+  margin-left: auto;
 }
