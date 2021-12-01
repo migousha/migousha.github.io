@@ -14,8 +14,8 @@
 }
 
 .c-section {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .c-small,.c-column {
@@ -56,7 +56,6 @@ p {
 
 .c-column{
   text-align: center;
-  font-size: 1.1rem;
 }
 
 /*button まずはお決まりのボックスサイズ算出をborer-boxに */
@@ -111,10 +110,32 @@ a.btn--yellow:hover {
   border-bottom: 2px solid #ccc100;
 }
 
+a.btn--pink {
+  color: #000;
+  background-color: #f781dd;
+  border-bottom: 5px solid #cc00a0;
+}
+
+a.btn--pink:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #f781dd;
+  border-bottom: 2px solid #cc00a0;
+}
+
 .nextbutton{
   margin: 50px;
 }
 
+.under-button{
+ display: flex;
+}
+
+
+.tubuyaki{
+  font-size: 1.6rem;
+  color: #fff;
+}
 
 /*レスポンシブ指定↓*/
 @media screen and (max-width: 480px) {
